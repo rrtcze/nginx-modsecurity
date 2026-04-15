@@ -30,8 +30,6 @@ services:
     image: ghcr.io/rrtcze/nginx-modsecurity:main
     container_name: nginx-modsecurity
     environment:
-      - PORT=80
-      - SSL_PORT=443
       - SERVERNAME="CHANGE-ME.org"
       - SSL_CERT_FILE="/srv/certs/CHANGE_ME_fullchain.crt"
       - SSL_CERT_KEY_FILE="/srv/certs/CHANGE_ME_key.crt"
