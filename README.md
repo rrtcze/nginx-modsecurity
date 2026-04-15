@@ -37,8 +37,8 @@ services:
       - SSL_CERT_KEY_FILE="/srv/certs/CHANGE_ME_key.crt"
       - BACKEND="http://your-app:5000"
     ports:
-      - 80:80
-      - 443:443
+      - 80:8080
+      - 443:8443
     volumes:
       - /var/log/nginx-modsecurity:/var/log/nginx-modsecurity
       - /srv/certs:/srv/certs:ro
