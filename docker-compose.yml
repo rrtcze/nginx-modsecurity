@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+
+  nginx-modsecurity:
+    image: rrtcze/nginx-modsecurity
+    container_name: nginx-modsecurity
+      #    environment:
+      #      - ACCESSLOG="/var/log/nginx/access.json"
+    ports:
+      - 8080:8080
+    volumes:
+      - /var/log/nginx-modsecurity:/var/log/nginx-modsecurity
